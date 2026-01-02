@@ -5,6 +5,7 @@ faster than googling and pasting into Konsole
 Made mainly for myself and could break with steam updates for any issues open an issue here ( https://github.com/triplesixdegrees/ally_tweaks )
 
 Main features is 
+
 Decky Loader (Install/Uninstall latest from ( https://github.com/SteamDeckHomebrew/decky-installer )
 Decky Plugins latest version install (AllyCenter ( https://github.com/PixelAddictUnlocked/allycenter ) , DeckyPlumber( https://github.com/aarron-lee/DeckyPlumber ), PowerControl ( https://github.com/mengmeet/PowerControl ), HueSync ( https://github.com/honjow/HueSync )
 Discover Apps install (Discord, Spotify, etc. also Warp CLI installer if you have steam connection problems in your country)
