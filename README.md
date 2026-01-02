@@ -36,7 +36,7 @@ A streamlined post-install script designed to automate the setup of SteamOS on t
 Open **Konsole** and paste the following command:
 
 ```bash
-curl -L https://github.com/triplesixdegrees/ally_tweaks/releases/download/release/ally_tweaks.sh | sh
+bash <(curl -sL https://github.com/triplesixdegrees/ally_tweaks/releases/download/release/ally_tweaks.sh)
 ```
 
 ### Option 2: Manual Installation
