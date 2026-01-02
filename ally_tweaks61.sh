@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ally Tweaks version 6 by triplesixdegrees
+# Ally Tweaks version 6.1 by triplesixdegrees
 # mainly made for myself and with steam updates could break, if something breaks write issues at https://github.com/triplesixdegrees/ally_tweaks
 
 STEAM_DIR="$HOME/.local/share/Steam"
@@ -11,10 +11,10 @@ CONFIG_FILE=$(find "$USERDATA_DIR" -name "localconfig.vdf" | head -n 1 2>/dev/nu
 show_menu() {
     clear
     echo "======================================"
-    echo "           ALLY TWEAKS    v6         "
+    echo "           ALLY TWEAKS    v6.1         "
     echo "======================================"
     echo "1) Decky Loader (Install/Uninstall)"
-    echo "2) Decky Plugins (AllyCenter, Plumber, Power)"
+    echo "2) Decky Plugins (AllyCenter, DeckyPlumber, PowerControl, HueSync)"
     echo "3) Discover Apps (Discord, Spotify, etc.)"
     echo "4) Firewall Tweaks (Enable/Disable)"
     echo "5) Power Management (Select Tweaks)"
@@ -102,6 +102,7 @@ install_apps() {
         echo "4) Telegram"
         echo "5) Google Chrome"
         echo "6) Heroic Games Launcher"
+        echo "7) Cloudflare Warp CLI"
         echo "b) Back"
         read -p "Selection: " app_choice
         case $app_choice in
@@ -111,6 +112,7 @@ install_apps() {
             4) flatpak install -y flathub org.telegram.desktop ;;
             5) flatpak install -y flathub com.google.Chrome ;;
             6) flatpak install -y flathub com.heroicgameslauncher.hgl ;;
+            7) warp_mgmt ;;
             b) break ;;
         esac
         echo "Task complete."
