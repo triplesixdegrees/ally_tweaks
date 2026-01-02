@@ -1,22 +1,42 @@
-Utility script for SteamOS on ASUS ROG ALLY 
-allows for fast install of everything you need
-faster than googling and pasting into Konsole
+🎮 SteamOS Utility for ASUS ROG Ally
+A streamlined post-install script designed to automate the setup of SteamOS (Bazzite, Nobara, etc.) on the ASUS ROG Ally. Skip the manual Googling and Konsole commands—get everything running in seconds.
+[!CAUTION]
+This script was created for personal use. SteamOS updates may occasionally break functionality. If you encounter bugs, please open an issue.
+✨ Features
+🛠️ Plugin Management
+Decky Loader: Automated install/uninstall of the latest version.
+Essential Plugins: One-click install for:
+AllyCenter: Specific ROG Ally controls.
+DeckyPlumber: Audio and session fixes.
+PowerControl: TDP and power management.
+HueSync: Ambilight synchronization.
+⚙️ System Tweaks
+L5/R5 Paddle Remap: Correctly maps back paddles (M1/M2) from L4/R4 to L5/R5 to ensure Steam Input profiles work as intended.
+Power Management: Prevents screen dimming and sleeping in Desktop Mode—ideal for long initial setups/downloads.
+Firewall Toggle: Easily Enable/Disable the system firewall.
+Shader Optimization: Configures Vulkan background processing and sets the optimal thread count for shader compilation.
+📦 Software & Tools
+App Installer: Fast-track install for Discord, Spotify, and more.
+Warp CLI: Includes a Cloudflare Warp installer to fix Steam connection/download issues in restricted regions.
+Hardware Info: Quickly check BIOS and Firmware versions to see if you are up to date.
+🚀 Quick Start
+Option 1: The Fast Way (One-Line Install)
+Open Konsole and paste the following command:
+bash
+curl -L https://github.com/triplesixdegrees/ally_tweaks/releases/download/release/ally_tweaks.sh | sh
+Используйте код с осторожностью.
 
-Made mainly for myself and could break with steam updates for any issues open an issue here ( https://github.com/triplesixdegrees/ally_tweaks )
-
-Main features is 
-Decky Loader (Install/Uninstall latest from ( https://github.com/SteamDeckHomebrew/decky-installer )
-Decky Plugins latest version install (AllyCenter ( https://github.com/PixelAddictUnlocked/allycenter ) , DeckyPlumber( https://github.com/aarron-lee/DeckyPlumber ), PowerControl ( https://github.com/mengmeet/PowerControl ), HueSync ( https://github.com/honjow/HueSync )
-Discover Apps install (Discord, Spotify, etc. also Warp CLI installer if you have steam connection problems in your country)
-Firewall Tweaks (Enable/Disable firewall)
-Power Management Tweaks ( disable turn off screen and autodim in desktop mode useful for clean steamos initial setup)
-L5/R5 Paddle Remap (M1/M2 Utility, remaps back paddles from L4/R4 to L5/R5 for correct use of user controller settings in steam)
-Steam Shaders Optimization (Vulkan/Threads, enable background shaders processing and setup amount of threads for shaders processing )
-BIOS & Firmware Status (check version of bios fast, for determening if latest or old)
-
-HOW TO USE
-
-1. download latest version of script from releases or execute this in konsole: curl -L https://github.com/triplesixdegrees/ally_tweaks/releases/download/release/ally_tweaks.sh | sh
-2. Right click Properties > Permissions > Allow executing file as program, or open konsole in same folder as script: right click open terminal here and give rights to execute via: chmod u+x yourscriptname.sh
-3. open it through konsole (right click Run in Konsole) or open konsole in same folder as script and type ./nameofscript where nameofscript is current name
-4. type number of whatever you need to do, on SteamOS desktop to open keyboard is to hold Command Center Button (left lower button closest to screen ) and X 
+Option 2: Manual Installation
+Download the ally_tweaks.sh from the Releases page.
+Set Permissions: Right-click the file > Properties > Permissions > Check "Allow executing file as program".
+Alternatively, run chmod u+x ally_tweaks.sh in the terminal.
+Run: Right-click the script and select "Run in Konsole" or type ./ally_tweaks.sh in your terminal.
+⌨️ Controls
+Navigation: Type the number corresponding to the feature you want and press Enter.
+On-Screen Keyboard: While in Desktop Mode, hold the Command Center Button (bottom-left button closest to the screen) and press X.
+🔗 Credits
+Decky Loader ( https://github.com/SteamDeckHomebrew/decky-loader )
+AllyCenter ( https://github.com/PixelAddictUnlocked/allycenter )
+DeckyPlumber ( https://github.com/aarron-lee/DeckyPlumber )
+PowerControl ( https://github.com/mengmeet/PowerControl )
+HueSync ( https://github.com/honjow/HueSync )
